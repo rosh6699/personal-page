@@ -62,6 +62,10 @@
   margin-left: 30px;
 }
 
+h4 {
+  font-size: 100%;
+}
+
 .rainbow {
   -webkit-animation: rainbow 8s ease infinite;
   animation: rainbow 8s ease infinite;
