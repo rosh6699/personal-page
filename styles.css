@@ -2,6 +2,7 @@
 
   /* margin-left: auto; */
   /* display: flex; */
+  border-radius: 50%;
   margin-top: 30px;
   width:70%;
   height: auto;
@@ -40,8 +41,14 @@
 }
 
 .jumbotron {
-  background-color: rgb(234, 235, 240);
+  /* background-color: #e2d4d7; */
+  background : repeating-radial-gradient(
+    circle at 0 0,
+    rgb(250, 248, 248),
+    rgb(240, 237, 237) 200px
+  );
   border-radius: 30px;
+  border-radius: 0;
 }
 
 .tab-content {
@@ -53,4 +60,35 @@
 .card-block {
   font-size: medium;
   margin-left: 30px;
+}
+
+.rainbow {
+  -webkit-animation: rainbow 8s ease infinite;
+  animation: rainbow 8s ease infinite;
+  background-image: linear-gradient(124deg, #fcfcfc, #d8c4c8, #c394f0, #89ace4);
+  background-size: 800% 800%
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+      background-position: 1% 80%
+  }
+  50% {
+      background-position: 99% 20%
+  }
+  100% {
+      background-position: 1% 80%
+  }
+}
+
+@keyframes rainbow {
+  0% {
+      background-position: 1% 80%
+  }
+  50% {
+      background-position: 99% 20%
+  }
+  100% {
+      background-position: 1% 80%
+  }
 }
